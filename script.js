@@ -1,7 +1,6 @@
-// Smooth scroll
 function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
 
-// Greeting & date
+// welcome date
 function updateDateGreeting(){
   const g = document.getElementById('greeting');
   const d = document.getElementById('current-date');
@@ -17,7 +16,7 @@ function updateDateGreeting(){
   if(year) year.textContent = now.getFullYear();
 }
 
-// Lightbox
+// gallery box
 const lightbox = {
   el: null,
   img: null,
@@ -55,7 +54,7 @@ const lightbox = {
   }
 };
 
-// Games
+// games
 function setupGameChips(){
   const chips = document.querySelectorAll('.chip');
   const title = document.getElementById('game-title');
@@ -78,7 +77,6 @@ function setupGameChips(){
   });
 }
 
-// Reveal on scroll for some subtle entrance
 function revealOnScroll(){
   document.querySelectorAll('.section').forEach(sec=>{
     const rect = sec.getBoundingClientRect();
