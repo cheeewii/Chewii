@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miko | Cozy Gamer & Portrait Photographer</title>
+  <meta name="description" content="Miko is a cozy gamer and portrait photographer who captures warm, emotional, story-driven moments both in games and in real life." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a class="brand" href="#">Chewii</a>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#info">More Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <figure class="hero-photo">
+        <img src="profile.jpg" alt="Portrait of Miko" />
+        <figcaption>Miko — cozy gamer & portrait photographer</figcaption>
+      </figure>
+
+      <div class="hero-text">
+        <h1 id="greeting">Hello — welcome!</h1>
+        <p class="lead">Cozy games, story-driven adventures, and soft portraits.</p>
+        <p class="meta">Updated: <time id="current-date" datetime=""></time></p>
+        <a class="cta" href="#gallery">Explore the gallery</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I’m a gamer and photographer who finds inspiration in calm, meaningful moments — in-game and IRL.
+         I love taking portrait photos that feel like a short story.</p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Photography</h3>
+          <p>Portraits, warm tones, natural expressions.</p>
+        </div>
+        <div class="about-card">
+          <h3>Gaming</h3>
+          <p>Cozy & narrative games shape my visual storytelling.</p>
+        </div>
+        <div class="about-card">
+          <h3>Commissions</h3>
+          <p>Open for portraits and creative concepts inspired by games.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>Cozy Game Inspired Gallery</h2>
+      <p class="section-desc">Hover to see details — click to open lightbox.</p>
+
+      <div class="gallery-layout">
+        <figure class="gallery-item" tabindex="0" data-title="Warm Portrait — Afternoon" data-desc="Shot with a soft window light.">
+          <img src="placeholder-art-1.jpg" alt="Portrait placeholder 1" />
+          <figcaption>
+            <span class="gc">🎮</span>
+            <span class="title">Afternoon</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" tabindex="0" data-title="Quiet Smile" data-desc="Candid portrait with muted tones.">
+          <img src="placeholder-art-2.jpg" alt="Portrait placeholder 2" />
+          <figcaption>
+            <span class="gc">📷</span>
+            <span class="title">Quiet Smile</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" tabindex="0" data-title="Story Portrait" data-desc="Story-driven composition.">
+          <img src="placeholder-art-3.jpg" alt="Portrait placeholder 3" />
+          <figcaption>
+            <span class="gc">🎞</span>
+            <span class="title">Story Portrait</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item" tabindex="0" data-title="Golden Hour" data-desc="Warm golden hour tones.">
+          <img src="placeholder-art-4.jpg" alt="Portrait placeholder 4" />
+          <figcaption>
+            <span class="gc">🌿</span>
+            <span class="title">Golden Hour</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="info" class="section">
+      <h2>More Information</h2>
+      <div class="games-showcase">
+        <aside class="games-list" aria-label="Games I Love">
+          <h3>Games I Love</h3>
+          <div class="chips" id="game-chips">
+            <button class="chip" data-game="Stardew Valley">Stardew Valley</button>
+            <button class="chip" data-game="Life is Strange">Life is Strange</button>
+            <button class="chip" data-game="Spiritfarer">Spiritfarer</button>
+            <button class="chip" data-game="A Short Hike">A Short Hike</button>
+            <button class="chip" data-game="Coffee Talk">Coffee Talk</button>
+          </div>
+        </aside>
+
+        <section class="game-detail" id="game-detail" aria-live="polite">
+          <h3 id="game-title">Pick a game</h3>
+          <p id="game-desc">Click a game to see why I love it and how it inspires my photography.</p>
+        </section>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Interested in a portrait or collaboration? Email: <a href="mailto:labzmiko@gmail.com">labzmiko@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Chewii</p>
+  </footer>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+    <div class="lb-content">
+      <img id="lb-image" src="" alt="" />
+      <div class="lb-caption">
+        <h4 id="lb-title"></h4>
+        <p id="lb-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
